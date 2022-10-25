@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
     public void UpdateScore(int value)
     {
         Score += value;
-        Txt_Score.text = "SCORE : " + Score;
+        Txt_Score.text = "Score : " + Score;
     }
 
     private void StartGame()
@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
         Score = 0;
         Time.timeScale = 1;
         Txt_Message.text = "";
-        Txt_Score.text = "SCORE : 0";
+        Txt_Score.text = "Score : 0";
     }
 
     public void GameOver()
